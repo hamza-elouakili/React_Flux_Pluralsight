@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "ecmaFeatures": {
+    "jsx": true								// we will be using JSX
+  },
+  "env": {									//in which environment you will be working in
+    "browser": true,
+    "node": true,
+    "jquery": true
+  },
+  "rules": {								// the rules you want to adhere to whilst coding, and eslint will check those
+    "quotes": 0,
+    "no-trailing-spaces": 0,
+    "eol-last": 0,
+    "no-unused-vars": 0,
+    "no-underscore-dangle": 0,
+    "no-alert": 0,
+    "no-lone-blocks": 0
+  },
+  "globals": {										//these have to be global to make bootstrap happy, it expects those to be in the global namespace, so this helps keeping eslint from getting upset if it sees these defined as global
+    "jQuery": true,
+    "$": true
+  }
+}
